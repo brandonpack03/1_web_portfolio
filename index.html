@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brandon Web Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="fanta.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <a href="/">Brandon P</a>
+        <nav>
+            <a target="_blank" href="https://github.com/brandonpack03"><i class="fa-brands fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/brandon-pack-b6529a1b4/"><i
+                    class="fa-brands fa-linkedin"></i></a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="intro-header">
+                <h1>Hello! I'm Brandon...</h1>
+                <p>Software Developer</p>
+            </div>
+            <h5 class="intro-description">
+                I build full-stack web apps focused on clean design based on real-world applications. 
+            </h5>
+            <div class="links-container">
+                <i class="fa-solid link-arrow fa-arrow-right"></i> 
+                <a href="mailto:brandonpack03@gmail.com">Email me</a>
+                <a target="_blank" href="https://github.com/brandonpack03">GitHub</a>
+                <a target="_blank" href="https://www.linkedin.com/in/brandon-pack-b6529a1b4/">LinkedIn</a>
+            </div>
+
+            <div id="play-game">
+                <button onclick="playGame()">Play game???</button>
+            </div>
+            <div style="display:none;" class="color-div">
+                <h4>Pick a color</h4>
+                <p style="display:none;">Great... now it's ruined.</p>
+                <input type="color" id="color-picker" onchange="changeColor()" value="#0084ff" />
+                <button style="display:none;" onclick="resetColor()">Reset</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Area</th>
+                        <th>Technologies</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Full-Stack</td>
+                        <td>JavaScript | React | NextJS | NodeJS & ExpressJS | Python | JSON</td>
+                    </tr>
+                    <tr>
+                        <td>Web & Data</td>
+                        <td>HTML | FantaCSS | TailwindCSS | MongoDB | SQL | AWS | GIT</td>
+                    </tr>
+                    <tr>
+                        <td>Workflow</td>
+                        <td>Agile (Scrum)</td>
+                    </tr>
+                
+                </tbody>
+            </table>
+        </section>
+
+        <section> 
+            <h2>Latest Projects</h2>
+            <div class="cards-grid">
+                <div class="project-card">
+                    <div>
+                        <p>July 1, 2025</p>
+                        <h4>Stackstore</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>NextJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>AWS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Stripe</p>
+                            </div>
+                        </div>
+                        <p>A cool store for programmers</p>
+                        <div class="project-links">
+                            <a target="_blank" href="/">Live</a>
+                            <a target="_blank" href="/">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="\1_web_portfolio\public\stackstore.png" alt="bpack-thumbnail"/>
+                    </div>
+                </div>
+
+
+                <!-- <div class="project-card">
+                    <div>
+                        <p>June 1, 2025</p>
+                        <h4>bpack</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>NextJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>NextJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>NextJS</p>
+                            </div>
+                        </div>
+                        <p>placeholder description</p>
+                        <div class="project-links">
+                            <a target="_blank" href="/">Live</a>
+                            <a target="_blank" href="/">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="\1_web_portfolio\public\fantacss.png" alt="smoljames-thumbnail"/>
+                    </div>
+                </div> -->
+
+
+                <!-- <div class="project-card">
+                    <div>
+                        <p>June 1, 2025</p>
+                        <h4>bpack</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>NextJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>NextJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>NextJS</p>
+                            </div>
+                        </div>
+                        <p>placeholder description</p>
+                        <div class="project-links">
+                            <a target="_blank" href="/">Live</a>
+                            <a target="_blank" href="/">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="\1_web_portfolio\public\fantacss.png" alt="smoljames-thumbnail"/>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>By <a href="https://www.brandonpack.com" target="_blank">Brandon Pack</a></p>
+    </footer>
+    <script>
+        // Interactivity for color switching game
+
+        // 1. Select the html elements in order to manipulate them
+
+        const body = document.querySelector('body')
+        const colorInput = document.getElementById('color-picker')
+        const colorDiv = document.querySelector('.color-div')
+        const hiddenText = document.querySelector('.color-div p')
+        const resetButton = document.querySelector('.color-div button')
+        const playButton = document.getElementById('play-game')
+
+        // 2. Create each function
+
+        function playGame() {
+            // This enables the game to played by showing color selector
+            colorDiv.style.display = 'block'
+            playButton.style.display ='none'
+
+        }
+
+        function changeColor() {
+            // Take the user's selected color and set it to the background color of the website
+            const selectedColor = colorInput.value
+            body.style.background = selectedColor
+            resetButton.style.display = 'block'
+            hiddenText.style.display = 'block'
+            colorInput.style.display = 'none'
+        }
+
+        function resetColor(){
+            body.style.background = 'white'
+            colorInput.style.display ='block'
+            playButton.style.display = 'block'
+
+            hiddenText.style.display = 'none'
+            resetButton.style.display = 'none'
+            colorDiv.style.display = 'none'
+        }
+
+        // 3. Assign each function to the correct buttons by adding a function call to the actual elements (done above in the html code)
+
+
+    </script>
+</body>
+
+</html>
